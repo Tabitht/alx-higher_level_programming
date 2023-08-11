@@ -1,3 +1,9 @@
 {
-  "C_Cpp.default.compilerPath": "c:\\Users\\HP\\alx-higher_level_programming\\0x01-python-if_else_loops_functions\\linked_lists.c"
+  "C_Cpp.default.compilerPath": "c:\\Users\\HP\\alx-higher_level_programming\\0x01-python-if_else_loops_functions\\linked_lists.c",
+  "python.linting.pycodestyleEnabled": true,
+  "python.linting.enabled": true
+}
+"[python]" : {
+  "editor.defaultFormatter": "ms-python.black-formatter"
+   "editor.formatOnSave": true
 }
