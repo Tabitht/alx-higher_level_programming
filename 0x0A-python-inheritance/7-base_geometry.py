@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+""" Defines a BaseGeometry """
+
 class BaseGeometry:
     """Represent base geometry."""
 

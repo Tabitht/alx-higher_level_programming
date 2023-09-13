@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+""" a function that checks for inheritance """
+
 def inherits_from(obj, a_class):
     """ checks if an object inherited directly or indirectly from the soecified class
     args:

@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+""" module: 2-is_same_class """
+
 def is_kind_of_class(obj, a_class):
     """ checks if an obj is an instance of an inheritance
     args:
