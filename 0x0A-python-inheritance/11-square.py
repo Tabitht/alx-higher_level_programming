@@ -2,7 +2,9 @@
 
 """ Defines a class square """
 
+
 Rectangle = __import__('9-rectangle').Rectangle
+
 
 class Square(Rectangle):
     """ An inherited class from Rectangle """

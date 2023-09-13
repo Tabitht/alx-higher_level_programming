@@ -2,6 +2,7 @@
 
 """Defines a class-checking function."""
 
+
 def is_same_class(obj, a_class):
     """ to check whether an object is an instance of a specified class
     args:

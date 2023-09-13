@@ -2,8 +2,9 @@
 
 """ a function that checks for inheritance """
 
+
 def inherits_from(obj, a_class):
-    """ checks if an object inherited directly or indirectly from the soecified class
+    """ checks if an object inherited from specified class
     args:
         obj - the object to check
         a_class - the class to check with

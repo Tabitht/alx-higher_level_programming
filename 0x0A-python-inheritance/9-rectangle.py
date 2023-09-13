@@ -2,7 +2,9 @@
 
 """ Defines a class Rectangle """
 
+
 BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
 
 class Rectangle(BaseGeometry):
     """ an inherited class from class BaseGeometry"""
@@ -18,4 +20,3 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         """ print """
         return ("[Rectangle] " + str(self.__width) + "/" + str(self.__height))
-
