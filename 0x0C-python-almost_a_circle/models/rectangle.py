@@ -6,8 +6,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """ creates a class called Rextangle """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ initializes the class Rectangle """
         self.width = width
         self.height = height
         self.x = x
@@ -16,10 +18,12 @@ class Rectangle(Base):
 
         @property
         def width(self):
+            """ gets the value of width """
             return self.__width
 
         @width.setter
         def width(self, value):
+            """ validates and set the value of width """
             if not isinstance(int, value):
                 raise TypeError("width must be an integer")
             if value <= 0:
@@ -28,10 +32,12 @@ class Rectangle(Base):
 
         @property
         def height(self):
+            """ gets the value of height """
             return self.__height
 
         @height.setter
         def height(self, value):
+            """ validates and sets the value of height """
             if not isinstance(int, value):
                 raise TypeError("height must be an integer")
             if value <= 0:
@@ -40,10 +46,12 @@ class Rectangle(Base):
 
         @property
         def x(self):
+            """ gets the value of x """
             return self.__x
 
         @x.setter
         def x(self, value):
+            """ validates and sets the value of x"""
             if not isinstance(int, value):
                 raise TypeError("x must be an integer")
             if value < 0:
@@ -53,10 +61,12 @@ class Rectangle(Base):
 
         @property
         def y(self):
+            """ gets the value of y """
             return self.__y
 
         @y.setter
         def y(self, value):
+            """ validates and sets the value of y """
             if not isinstance(int, value):
                 raise TypeError("y must be an integer")
             if value < 0:
@@ -64,20 +74,25 @@ class Rectangle(Base):
             self.__y = value
 
     def area(self):
+        """ it calculates the area of a rectangle """
         return (self.height * self.width)
 
     def display(self):
+        """ prints in stdout the Rectangle instance with the character # """
         print("{}".format("\n" * self.x), end="")
         for i in range(self.height):
             print("{} {}".format(" " * self.y, "#" * self.width), end="")
             print()
 
     def __str__(self):
+        """ returns the __str__ method of the string """
         return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
                                                         self.y, self.width,
                                                         self.height))
 
     def update(self, *args, **kwargs):
+        """ assigns an argument to each attribute and also its
+        key/value arguments """
         if len(args) == 0:
             for key, value in kwargs.items():
                 self.__setattr__(key, value)
@@ -100,6 +115,7 @@ class Rectangle(Base):
             number += 1
 
     def to_dictionary(self):
+        """ returns the dictionary representation of a Rectangle """
         obj_dictionary = {"id": self.id, "width": self.width,
                           "height": self.height, "x": self.x, "y": self.y}
         return obj_dictionary
