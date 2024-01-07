@@ -1,1 +1,1 @@
-A dirextory on test driven development
+A directory on test-driven development
