@@ -33,20 +33,20 @@ The size argument must be only an integer else a TypeError is raised
 
 ::
     >>> print_square("HELLO")
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     TypeError: size must be an integer
 
 ::
     >>> print_square(2.54)
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     TypeError: size must be an integer
 
 ::
     >>> print_square(-4.88)
-    Traceback (most recent call last)
+    Traceback (most recent call last):
     TypeError: size must be an integer
 
 ::
     >>> print_square(-8)
-    Traceback (most recent call last)
-    TypeError: size must be >= 0
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
