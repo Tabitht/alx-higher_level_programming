@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" a module that defines a function that adds a newline after .? and : """
+
+
 def text_indentation(text):
     """prints a text with 2 new lines after each of these characters: ., ? and :
     args:

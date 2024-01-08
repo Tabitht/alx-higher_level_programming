@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+""" defines a function that prints a square with poind sign """
+
+
 def print_square(size):
     """ prints a square with character #
     args:
