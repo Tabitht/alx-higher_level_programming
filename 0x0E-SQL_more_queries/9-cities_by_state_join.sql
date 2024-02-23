@@ -2,6 +2,8 @@
 -- Each record should display: cities.id - cities.name - states.name
 -- Results must be sorted in ascending order by cities.id
 -- You can use only one SELECT statement
-SELECT cities.id, cities.name, states.name
-FROM cities LEFT JOIN states ON states.id = cities.
-states_id ORDER BY cities.id;
+SELECT c.`id`, c.`name`, s.`name`
+FROM cities AS c
+INNER JOIN `states` AS s
+ON c.`state_id` = s.`id`
+ORDER BY c.`id`;

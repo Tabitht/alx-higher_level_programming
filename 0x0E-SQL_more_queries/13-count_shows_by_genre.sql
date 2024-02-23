@@ -4,10 +4,10 @@
 -- Second column must be called number_of_shows
 -- Don’t display a genre that doesn’t have any shows linked
 -- Results must be sorted in descending order by the number of shows linked
-SELECT tv_show_genres.genre_id AS genre,
-       COUNT(tv_show_genres.show_id) AS number_of_shows
-FROM tv_show_genres
-LEFT JOIN tv_shows ON tv_show_genres.show_id = tv_shows.id
-GROUP BY tv_show_genres.genre_id
-HAVING COUNT(tv_show_genres.show_id) > 0
-ORDER BY number_of_shows DESC;
+SELECT g. `name` AS `genre`,
+       COUNT(*) AS `number_of_shows`
+FROM `tv_genres` AS g
+INNER JOIN `tv_shows_genres` AS t
+ON g. `id` = t. `genre.id`
+GROUP BY g. `name`
+ORDER BY `number_of_shows` DESC;
